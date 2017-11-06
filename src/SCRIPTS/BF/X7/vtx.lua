@@ -14,7 +14,7 @@ return {
         { t = "Chan",    x = 10,  y = 24, sp = 30, min=1, max=8, vals = { 3 }, to = SMLSIZE, upd =  function(self) self.updateVTXFreq(self) end },
         { t = "Power",   x = 10,  y = 34, sp = 30, min=1, vals = { 4 }, to = SMLSIZE, upd = function(self) self.updatePowerTable(self) end },
         { t = "Pit",     x = 10,  y = 44, sp = 30, min=0, max=1, vals = { 5 }, to = SMLSIZE, table = { [0]="OFF", "ON" } },
-        { t = "Dev",     x = 70, y = 14, sp = 25, write = false, ro = true, vals = { 1 }, to = SMLSIZE , table = {[3]="SA",[4]="TR",[255]="None"} },
+        { t = "Dev",     x = 70, y = 14, sp = 25, write = false, ro = true, vals = { 1 }, to = SMLSIZE , table = {[3]="SA",[4]="Tramp",[255]="None"} },
         { t = "Freq",    x = 70, y = 24, sp = 25, min=5000, max=6000, ro=true, to = SMLSIZE  },
     },
     freqLookup = {
